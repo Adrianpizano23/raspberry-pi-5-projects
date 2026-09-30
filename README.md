@@ -28,3 +28,11 @@ Roadmap de 1 año: domótica, visión por computador, robótica e IA en una Rasp
   no se interpretan bien sin frases personalizadas — pendiente de explorar 
   "Sentences" personalizadas más adelante
 - Pendiente: prueba con micrófono/altavoz real (hoy solo por texto)
+## Extra — Integración Alexa vía Emulated Hue
+- Aire acondicionado (Midea) y enchufe inteligente (Tuya) expuestos a Alexa 
+  mediante `emulated_hue`, con `listen_port: 80` forzado (necesario para que 
+  Alexa los descubra en versiones recientes)
+- Control por voz funcionando desde el Echo: "Alexa, enciende el aire 
+  acondicionado", incluso ajuste de temperatura vía truco de porcentaje/brillo
+
+  
