@@ -51,6 +51,21 @@ portafolio técnico real mientras aprendo.
 - README completo
 - Cierre del sprint inicial de 5 días
 
+## Día 6 — Voz real (pausado)
+- Probado el micrófono del móvil vía app Home Assistant Companion: el 
+  reconocimiento de voz funciona, pero responde en inglés porque el móvil usa 
+  el asistente por defecto de la app, no "Asistente Casa"
+- Pendiente: conseguir micrófono USB dedicado para la Pi y fijar "Asistente 
+  Casa" como predeterminado
+
+## Día 7 — MQTT (Mosquitto) + LLM local (Ollama)
+- Mosquitto (broker MQTT) desplegado en Docker — base para el futuro proyecto 
+  del inversor solar
+- Integración MQTT nativa conectada en Home Assistant, verificada con mensaje 
+  de prueba end-to-end (`mosquitto_pub` → recibido en tiempo real en HA)
+- Ollama desplegado en Docker, modelo `qwen2.5:0.5b` descargado y probado por 
+  terminal — respuesta rápida y en español, buen resultado para 4GB de RAM
+
 ## Extra — Integración con Alexa (Emulated Hue)
 
 Aire acondicionado (Midea) y enchufe inteligente (Tuya) expuestos a Alexa 
